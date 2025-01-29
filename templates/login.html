@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block head %}
+  <title>Halaman Login</title>
+{% endblock %}
+{% block body %}
+<h1>Halaman Login</h1>
+<div class="mt-5"></div>
+<div class = "row justify-content-center">
+  <div class="col-4">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="text-center">Halaman Login</h2>
+      </div>
+      <div class="card-body">
+        <form method="POST">
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="inpEmail" class="form-control">
+          </div>
+          <div class = "mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" name="inpPass" class="form-control">
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary mt-4">Login</button>
+            <a class="btn btn-primary mt-4" href="/register">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
